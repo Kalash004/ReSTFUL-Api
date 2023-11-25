@@ -10,5 +10,5 @@ router.get('/blog/:blogId', isAuth, readBlogById);
 router.delete('/blog/:blogId', isAuth, deleteBlogById);
 router.patch('/blog/:blogId', isAuth, updateBlogById);
 router.get("/",(req, res) => {
-    res.render("../api")
+    res.render("api")
 })
